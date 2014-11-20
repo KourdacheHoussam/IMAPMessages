@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>My Web Mail</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS pour le cadre du site -->
+        <link rel="stylesheet" type="text/css" href="css/general.css"/>
+        <!-- CSS Spécifique au contenu (cf id="content") -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <!-- Librairie jQuery -->
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>
+    	<script type="text/javascript" src="js/client.js"></script>
+    </head>
+    <body>
+        
+        <!-- Conteneur du site -->
+        <section id="container">
+
+            <!-- Header -->
+            <header id="header"><h1>WeeMail</h1></header>
+            
+            <!-- information utilisateur -->
+            <div id="info-user">
+                <p>blabla@gmail.com</p>
+            </div>
+            
+			<div id="loading" class="mailbox">Getting your mail ....</div>
+            <!-- Contenu de la page -->
+            <section id="content" class="mailbox" role="main">
+                <h2 class="titre-h2">Liste de vos emails</h2>
+                <!-- TODO : Liste des mails -->
+            </section>
+      
+            <!-- Footer -->
+            <footer id="footer">Footer</footer> 
+        </section>
+	    </body>
+</html>

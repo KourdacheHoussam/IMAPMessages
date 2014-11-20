@@ -1,0 +1,5 @@
+Lancer de serveur de récupération des mails :
+
+$ nodejs server.js
+
+allez ensuite sur le site /webiste/index.html

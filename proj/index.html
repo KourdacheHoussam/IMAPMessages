@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/general.css"/>
+        <!-- CSS Spécifique au contenu (cf id="content") -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+<body>
+	<h1>Ma boite</h1>
+
+  
+        <!-- Conteneur du site -->
+        <section id="container">
+
+            <!-- Header -->
+            <header id="header"><h1>WeeMail</h1></header>
+            
+            <!-- information utilisateur -->
+            <div id="info-user">
+                <p>blabla@gmail.com</p>
+            </div>
+            
+		            <!-- Contenu de la page -->
+            <section id="content" class="mailbox" role="main">
+                <h2 class="titre-h2">Liste de vos emails</h2>
+                <!-- TODO : Liste des mails -->
+	<div id="boites"></div>
+	<div id="messages" style="border-top : 1px solid black;"></div>
+
+            </section>
+      
+            <!-- Footer -->
+            <footer id="footer">Footer</footer> 
+        </section>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://localhost:1337/socket.io/socket.io.js"></script>
+	<script src="client.js"></script>
+</body>
+</html>
